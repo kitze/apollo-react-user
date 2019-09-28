@@ -1,1 +1,1 @@
-## graphql-user-react
+## apollo-react-user
