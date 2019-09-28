@@ -1,6 +1,6 @@
 {
   "name": "apollo-react-user",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "dist/index.js",
   "module": "dist/apollo-react-user.esm.js",
   "typings": "dist/index.d.ts",
@@ -41,6 +41,7 @@
   "dependencies": {
     "@apollo/react-hooks": "^3.1.0",
     "apollo-boost": "^0.4.4",
-    "graphql-user": "^0.1.6"
+    "graphql-user": "^0.1.6",
+    "npm": "^6.11.3"
   }
 }
