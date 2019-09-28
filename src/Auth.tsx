@@ -24,9 +24,10 @@ export const Auth: React.FC<{
   localStorageUserKey = USER_OBJECT,
   afterAuth: afterAuthProp,
 }) => {
-  const [user, setUser] = useState(() =>
-    JSON.parse(window.localStorage.getItem(localStorageUserKey) || '')
-  );
+  const [user, setUser] = useState(() => {
+    const foundUser = window.localStorage.getItem(localStorageUserKey);
+    return foundUser ? JSON.parse(foundUser) : {};
+  });
   const [showRegisterForm, setShowRegisterForm] = useState(false);
   const client = useApolloClient();
 
