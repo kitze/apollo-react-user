@@ -3,6 +3,6 @@ export const propFn = (prop, args) =>
 
 export const onEnter = fn => {
     return {
-        onKeyDown: e => e.key === 'Enter' && fn && fn(),
+        onKeyDown: e => e.key === 'Enter' && fn && fn(e),
     };
 };
