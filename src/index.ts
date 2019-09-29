@@ -13,5 +13,8 @@ export * from './hooks/use-auth';
 export * from './hooks/use-login-form';
 export * from './hooks/use-register-form';
 
-//others
+//graphql operations
 export * from './get-graphql-operations';
+
+//utils
+export * from './utils';
