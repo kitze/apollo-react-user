@@ -6805,6 +6805,11 @@ react-dom@^16.9.0:
     prop-types "^15.6.2"
     scheduler "^0.16.0"
 
+react-hanger@^2.1.3:
+  version "2.1.3"
+  resolved "https://registry.yarnpkg.com/react-hanger/-/react-hanger-2.1.3.tgz#16290f75386c7e7bd7a86e45bcf885ba89438ee9"
+  integrity sha512-F9EnmgMz+7LUCkFmaRpgYvYAKcGj/6gY7hm8kq/MOkumnxxO/RukJKnYhyQbsYOh2dMrsE7s8IcsWFiGwKF8Kg==
+
 react-is@^16.8.1, react-is@^16.8.4:
   version "16.10.0"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.10.0.tgz#3d6a031e57fff73c3cfa0347feb3e8f40c5141e5"
