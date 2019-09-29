@@ -2,7 +2,7 @@ import { useMutation } from '@apollo/react-hooks';
 import { useAuth } from './use-auth';
 import { useInput } from 'react-hanger';
 
-export const useRegisterForm = (registerMutation:any) => {
+export const useRegisterForm = (registerMutation: any) => {
   const { afterAuth, showLogin } = useAuth();
   const name = useInput('');
   const email = useInput('');
@@ -21,7 +21,7 @@ export const useRegisterForm = (registerMutation:any) => {
   };
 
   const submit = async e => {
-    e.preventDefault();
+    e && e.preventDefault();
 
     const newUser = {
       name: name.value,

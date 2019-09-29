@@ -17,7 +17,7 @@ export const useLoginForm = (loginMutation: any) => {
   };
 
   const submit = async e => {
-    e.preventDefault();
+    e && e.preventDefault();
 
     try {
       const { data } = await login({
