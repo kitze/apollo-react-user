@@ -56,12 +56,21 @@ export const Auth: React.FC<{
     window.localStorage.removeItem(localStorageUserKey);
   };
 
+  const persistUser = user => {
+    window.localStorage.setItem(localStorageUserKey, JSON.stringify(user));
+  };
+
   //call this function after the user is registered of after he logs in
   const afterAuth = ({ user, token }: { user: any; token: any }) => {
     setUser(user);
     propFn(afterAuthProp, { user, token });
     window.localStorage.setItem(localStorageTokenKey, token);
-    window.localStorage.setItem(localStorageUserKey, JSON.stringify(user));
+    persistUser(user);
+  };
+
+  const updateUser = userUpdate => {
+    setUser(userUpdate);
+    persistUser(user);
   };
 
   const showAuth = !user;
@@ -76,6 +85,7 @@ export const Auth: React.FC<{
     afterAuth,
     showLogin,
     showRegister,
+    updateUser,
   };
 
   return (
